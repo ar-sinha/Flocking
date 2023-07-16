@@ -3,10 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <style>
-/* .popup-content img {
-  max-width: 40%;
-  height: auto;
-} */
 
 .popup-content img {
   display: block;
@@ -298,20 +294,20 @@ window.addEventListener('load', function() {
 `;
 
   
-  // Create the popup element
+
   var popup = document.createElement('div');
   popup.className = 'popup';
   popup.innerHTML = popupContent;
 
-  // Add the popup to the body
+  
   document.body.appendChild(popup);
 
-  // Function to close the popup
+  
   function closePopup() {
     document.body.removeChild(popup);
   }
 
-  // Add an event listener to the "Try Simulation" button to close the popup
+  
   var trySimulationButton = popup.querySelector('.btn-try-simulation');
   trySimulationButton.addEventListener('click', closePopup);
 });
